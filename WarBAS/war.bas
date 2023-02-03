@@ -1,0 +1,24 @@
+10 REM sp:9,tile:6
+20 SCREEN 2,0:COLOR 3,12,12:CLS:KEYOFF:DEFINTA-Z:R=RND(-TIME):CE$="C3 BU7 G5F5 E5H5"
+30 N=3:DIMR(N),C(N),G(N),E(N):NR=4:NC=4:DIMS(NR,NC)
+35 R(1)=0:C(1)=0:E(1)=9:G(1)=1 : R(2)=2:C(2)=2:E(1)=9:G(1)=1 :
+40 SP$="":FOR N=1 TO 8:READ K:SP$=SP$+CHR$(K):NEXT:SPRITE$(0)=SP$
+45 SP$="":FOR N=1 TO 8:READ K:SP$=SP$+CHR$(K):NEXT:SPRITE$(1)=SP$
+47 PUT SPRITE 0,(46+10*R(0),43+8*C(0)),1,0:
+50 PUT SPRITE 1,(46+10*R(1),43+8*C(1)),6,1:
+60 FOR J=0 TO  1: FOR I=0TO 5
+70 X =(JMOD2)* 5+ 50+10*I:Y=50+ 8*J
+80 PRESET(X,Y): :DRAW CE$
+90 PAINT (  X, Y),3,2
+100 NEXT I,J
+110 A$=INPUT$(1)
+120 DATA 255,129,129,129,129,129,129,255
+130 DATA &H00,&H00,&H3C,&H3C,&H3C,&H3C,&H00,&H00
+
+
+R(): riga
+C(): colonna
+G(): group, 0: cursor, 1: user, 2: enemy a, 3: enemy b:
+E() energy: 0-9
+
+S(), stack group, 0: hide, 1: 
