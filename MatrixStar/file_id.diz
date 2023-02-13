@@ -1,0 +1,34 @@
+Matrix Star
+
+Author: Roberto Capuano
+Category: Wild
+System:   MSX
+Language: BASIC
+Len source code: 289
+Len exe file: 243
+Len code only: 243
+Instructions:
+Connect to WebMSX at https://webmsx.org/
+press ALT-B, copy and paste the source from TXT file
+type "RUN"
+In alternative mount star.dsk as drive A:
+load"a:star.bas"
+run
+Description:
+Program writes the star shape in video memory as sequence of bytes. Each byte is shifted with a random number. 
+At each iteration the shift range is reduced. 
+10 cls: SCREEN1:KEYOFF:DEFINTA-Z: BA=6144
+Clear Screen, switch to 32 column mode, set BA as base video address
+15 for RA=5 TO 0 step -1
+At each iteration reduces random range
+20 FOR L=0TO12:for J=0 TO A:B=16-L:C=B-4:
+Star shapes is divided in 4 triangles up to 12 rows.
+30 VPOKE BA+(4+J)*32+L,42+RND(1)*RA
+31 VPOKE BA+(C+J)*32+B,42+RND(1)*RA
+32 VPOKE BA+(C+J)*32+L,42+RND(1)*RA
+33 VPOKE BA+(4+J)*32+B,42+RND(1)*RA
+Writes in video memory 4 characters at times
+40 :NEXT J:A=A+1:NEXT L:A=0:NEXT RA
+close loops
+Comments:
+The idea was to render the star using a Matrix effect. A full screen version is too slow to entertain.
