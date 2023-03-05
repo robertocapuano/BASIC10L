@@ -1,0 +1,92 @@
+  list
+  10 COLOR 1 ,15,15
+  20 SCREEN 2
+  30 LINE (10,10)-(100,100),1
+  40 K$=INPUT$(1)
+  Ok
+   
+
+  Break in 40
+  Ok
+  list
+  10 COLOR 7 ,13,13
+  20 SCREEN 2
+  30 LINE (10,10)-(100,100),9
+  40 K$=INPUT$(1)
+  Ok
+
+                   list 10
+  10 COLOR 9 ,10,10
+  Ok
+   
+   
+   1 cls :KEYOFF: DEFINTA-Z:
+     10 COLOR 3,12,12:
+  20 SCREEN 2,1
+  30 X=100:Y=100: rem LINE (10,10)-(100,100),1
+50 DATA 0, 0, 0, 24, 24, 0, 0, 0
+51 FOR I=0 TO 7:  READ A$: B$=B$+CHR$(VAL(A$)): next
+52 SPRITE$(0)=B$: PUT SPRITE 0,(X,Y),3
+70 DIM VX(10):DIM VY(10): DIM PX(10): DIM PY(10)
+80 for I=0to4: VX(I)= (RND(1)-.5)*8: VY(I)=1+RND(1)*2: PX(I)=RND(1)*200: PY(I)=0: 
+81 SPRITE$(I+1)=B$:NEXT
+85 DATA 24, 60, 126, 255, 255, 126, 60, 24
+86 FOR I=0 TO 7:  READ A$: C$=C$+CHR$(VAL(A$)): next
+87 rem SPRITE$(0)=C$
+
+90 rem for I=0TO4: PX(I)=PX(I)+VX(I): PY(I)=PY(I)+VY(I): PUT SPRITE I+1,(PX(I),PY(I)),3 : NEXT
+90 BX=PX(IJ):BY=PY(IJ): PX(IJ)=BX+VX(IJ): PY(IJ)=BY+VY(IJ): LINE (BX,BY)-(PX(IJ),PY(IJ)),3 :PUT SPRITE IJ+1,(PX(IJ),PY(IJ)),3 :IJ=IJ+1: if IJ>4 then IJ=0
+100 PUT SPRITE 0,(X,Y),1
+110  ON STRIG GOSUB 160 : STRIG(0) ON 
+119 D=STICK(0)
+120 IF D=0 THEN GOTO 90
+121 IF D=1 THEN Y=Y-4:GOTO 90
+122 IF D=2 THEN X=X+4:Y=Y-4:GOTO 90
+123 IF D=3 THEN X=X+4:GOTO 90
+124 IF D=4 THEN X=X+4:Y=Y+4:GOTO 90
+125 IF D=5 THEN Y=Y+4:GOTO 90
+126 IF D=6 THEN X=X-4:Y=Y+4:GOTO 90
+127 IF D=7 THEN X=X-4:GOTO 90
+128 IF D=8 THEN X=X-4:Y=Y-4:GOTO 90
+160 SPRITE$(0)=C$:RETURN
+  
+   100  rem SCREEN 2,1
+101 REM --- sprites data
+103 REM --- setup values
+104 N=1:REM num.sprites
+105 DIM C%(N):REM sprite color table
+106 X%=90:Y%=80:REM sprite coords
+107 REM ----------------
+108 FOR J=0 TO N-1
+109 A$="":B$=""
+110 FOR I=0 TO 7
+111 READ A$: B$=B$+CHR$(VAL(A$))
+112 SPRITE$(J)=B$
+113 NEXT I
+114 READ C%(J): PUT SPRITE J,(X%,Y%),C%(J)
+115 NEXT J
+116 FOR J=0 TO N-1
+117 PUT SPRITE J,(X%,Y%),C%(J)
+118 NEXT J
+119 D%=STICK(0)
+120 IF D%=0 THEN GOTO 119
+121 IF D%=1 THEN Y%=Y%-4:GOTO 116
+122 IF D%=2 THEN X%=X%+4:Y%=Y%-4:GOTO 116
+123 IF D%=3 THEN X%=X%+4:GOTO 116
+124 IF D%=4 THEN X%=X%+4:Y%=Y%+4:GOTO 116
+125 IF D%=5 THEN Y%=Y%+4:GOTO 116
+126 IF D%=6 THEN X%=X%-4:Y%=Y%+4:GOTO 116
+127 IF D%=7 THEN X%=X%-4:GOTO 116
+128 IF D%=8 THEN X%=X%-4:Y%=Y%-4:GOTO 116
+
+
+
+
+
+
+
+
+
+
+
+  color  auto   goto   list   run
