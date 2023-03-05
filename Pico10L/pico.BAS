@@ -1,6 +1,6 @@
 10 screen1,0,0:COLOR 1,15,15::KEYOFF:CLS:DEFINTA-Z:VB=base(5):R=RND(-TIME)
 11 BB=VB+8*32+10:CB=BASE(6):PB=BASE(7):DIM CM(8,8): DIM UM(8,8): sy(0)=46:SY(1)=254
-15 DIM PA(8):PA(0)=128:PA(1)=64:PA(2)=32:PA(3)=16:PA(4)=8:PA(5)=4:PA(6)=2:PA(7)=1
+16 PA(0)=1:forI=1to7:PA(i)=PA(i-1)*2:next
 20 cls:GC=RND(1)*255:CP=PB+GC*8: for i=0TO7:CB=VPEEK(CP+I):forJ=0to7:CM(I,J)=-((CB AND PA(J))>0) : NEXT J,I
 30 for i=0to7:forJ=0to7:vpoke BB+I*32+j,SY(0): UM(I,J)=0:NEXT J,I:rem +CM(I,J)
 40 for i=0to7:CR=0:CC=0:NR=0: NC=0: for J=0to7: 
