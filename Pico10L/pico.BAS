@@ -10,7 +10,7 @@
 70 if K=32 then UM(R,C)=UM(R,C)xor1: vpoke BB+R*32+C,SY(UM(R,C)):
 80  if K=30andr>0thenR=R-1:elseif K=31andR<7thenR=R+1:
 100 if K=28andC<7thenC=C+1:elseif K=29andC>0thenC=C-1:elseifk=27then20
-120 if k=13 then eR=0:for i=0to7:forJ=0to7:ER=ER-(UM(i,j)<>CM(i,j)):nextj,I:if ER=0then beep:goto20 
+120 if k=13 then ER=0:for i=0to7:forJ=0to7:ER=ER-(UM(i,j)<>CM(i,j)):nextj,I:if ER=0then beep:goto20 
 130 goto 55
 
 
