@@ -5,7 +5,7 @@
 4 CR=CR-(CM(I,J)=1):if(CM(I,J)=0orJ=7)andCR>0thenNC=NC+1:VPOKEBB+8+32*I+NC,48+CR:CR=0
 5 CC=CC-(CM(J,I)=1):if(CM(J,I)=0orj=7)andCC>0thenNR=NR+1:VPOKEBB+32*(NR+8)+I,48+CC:CC=0
 6 if RND(1)<0.1 and CM(I,J)>0 then UM(I,J)=1:vpoke BB+I*32+J,SY(1):nextJ,I:else nextJ,I:R=0:C=0:LOCATE8,8
-7k$=INPUT$(1):K=ASC(K$):P=BB+R*32+C:ifK=120thenvpokeP,120:UM(R,C)=0:elseifK=32thenUM(R,C)=UM(R,C)xor1:vpokeP,SY(UM(R,C))
+7 k=ASC(INPUT$(1)):P=BB+R*32+C:ifK=120thenvpokeP,120:UM(R,C)=0:elseifK=32thenUM(R,C)=UM(R,C)xor1:vpokeP,SY(UM(R,C))
 8 ifK=30andr>0thenR=R-1:elseifK=31andR<7thenR=R+1:elseifK=28andC<7thenC=C+1:elseifK=29andC>0thenC=C-1:elseifk=27then1
 9 LOCATE8+C,8+R:ifk=13then ER=0:forI=0to7:forJ=0to7:ER=ER-(UM(i,j)<>CM(i,j)):nextj,I:ifER=0then2:else7:else7
 
