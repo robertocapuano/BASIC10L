@@ -1,4 +1,4 @@
-0 screen1,0,0:COLOR 1,15,15:KEYOFF:CLS:DEFINTA-Z:VB=base(5):R=RND(-TIME):BB=VB+266:PB=BASE(7):sy(0)=46:SY(1)=254:PA(0)=1
+0 screen1,0,0:COLOR1,15,15:KEYOFF:CLS:DEFINTA-Z:VB=base(5):R=RND(-TIME):BB=VB+266:PB=BASE(7):sy(0)=46:SY(1)=254:PA(0)=1
 1 forI=1to7:PA(i)=PA(i-1)*2:next:ifGC<>0thenforI=0to7:forJ=0to7:vpokeBB+I*32+j,SY(CM(I,J)):nextJ,I:k$=INPUT$(1)
 2 cls:PLAY"T120O4L15A":?PT:GC=RND(1)*255:CP=PB+GC*8:fori=0TO7:CB=VPEEK(CP+I):forJ=0to7:CM(I,J)=-((CBANDPA(J))>0):nextJ,I
 3 forI=0to7:forJ=0to7:vpoke BB+I*32+j,SY(0):UM(I,J)=0:next J,I:forI=0to7:CR=0:CC=0:NR=0:NC=0:forJ=0to7: 
