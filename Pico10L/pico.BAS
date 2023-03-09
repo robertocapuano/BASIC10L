@@ -9,6 +9,8 @@
 8 ifK=30andr>0thenR=R-1:elseifK=31andR<7thenR=R+1:elseifK=28andC<7thenC=C+1:elseifK=29andC>0thenC=C-1:elseifk=27then1
 9 LOCATE8+C,8+R:ifk=13then ER=0:forI=0to7:forJ=0to7:ER=ER-(UM(i,j)<>CM(i,j)):nextj,I:ifER=0thenPT=PT+1:goto2:else7:else7
 
+PT: Points
+ER: errors
 SY:symbols
 NR next row
 NC: next col
