@@ -34,7 +34,7 @@ run
 ```
 
 WebMSX Launch URL:
-- https://webmsx.org?MACHINE=MSX2P&DISK=https://raw.githubusercontent.com/robertocapuano/BeastBAS/main/beast.dsk&BASIC_RUN=beast.bas
+- https://webmsx.org?MACHINE=MSX2P&DISK=https://raw.githubusercontent.com/robertocapuano/BASIC10L/main/BeastBAS/beast.dsk&BASIC_RUN=beast.bas
 
 MSXPen link:
 - https://msxpen.com/codes/-MTbfWGvTMnsPBJMVGec
