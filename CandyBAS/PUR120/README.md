@@ -27,7 +27,7 @@ Cursor movement is like over a chessboard: at any moment only two candies are ad
 - ESCAPE key to restart the game
 
 
-Sources are stored at: https://github.com/robertocapuano/CandyBAS/tree/PUR120
+Sources are stored at: https://github.com/robertocapuano/BASIC10L/CandyBAS/tree/PUR120
 
 # Installation
 Game was developed in MSX-BASIC v3 on a MSX2+. Emulator is available at https://webmsx.org/
@@ -51,7 +51,7 @@ run
 ```
 
 WebMSX Launch URL:
-- https://webmsx.org?MACHINE=MSX2P&DISK=https://raw.githubusercontent.com/robertocapuano/CandyBAS/PUR120/candy.dsk&BASIC_RUN=candy.bas
+- https://webmsx.org?MACHINE=MSX2P&DISK=https://raw.githubusercontent.com/robertocapuano/BASIC10L/main/CandyBAS/PUR120/candy.dsk&BASIC_RUN=candy.bas
 
 MSXPen link:
 - https://msxpen.com/codes/-M1tl2_cHDuasN2gmIbj
