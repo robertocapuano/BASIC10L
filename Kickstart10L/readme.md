@@ -23,7 +23,7 @@ run
 
 WebMSX Launch URL:
 
-- https://webmsx.org/?DISK=https://github.com/robertocapuano/Kickstart10L/raw/main/kickstart.dsk&BASIC_RUN=kckstrt.bas
+- https://webmsx.org/?DISK=https://raw.githubusercontent.com/robertocapuano/BASIC10L/main/Kickstart10L/kickstart.dsk&BASIC_RUN=kckstrt.bas
 
 
 # Source Description

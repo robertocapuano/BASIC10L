@@ -15,7 +15,7 @@ The time is limited to 10 seconds, a new matrix is presented when it expires.
 
 If you guess the character the remaining time is added to the score otherwise subtracted.
 
-Sources are stored at: https://github.com/robertocapuano/PazBAS
+Sources are stored at: https://github.com/robertocapuano/BASIC10L/PazBAS
 
 # Installation
 Game was developed on a MSX2 emulator at https://webmsx.org/
@@ -38,7 +38,8 @@ run
 ```
 
 WebMSX Launch URL:
-- https://webmsx.org?MACHINE=MSX2P&DISK=https://github.com/robertocapuano/PazBAS/raw/master/paz.dsk&BASIC_RUN=paz.bas
+- https://webmsx.org?MACHINE=MSX2P&DISK=https://raw.githubusercontent.com/robertocapuano/BASIC10L/main/PazBAS/paz.dsk&BASIC_RUN=paz.bas
+
 
 MSXPen link:
 - https://msxpen.com/codes/-M0mhCa2zgrc5Mo85MAy

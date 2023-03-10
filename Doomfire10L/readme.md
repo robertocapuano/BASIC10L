@@ -27,11 +27,11 @@ run
 
 WebMSX Launch URL:
 
-- https://webmsx.org/?DISK=https://github.com/robertocapuano/Doomfire10L/raw/main/doomfire.dsk&BASIC_RUN=doomfire.bas
+- https://webmsx.org/?DISK=https://raw.githubusercontent.com/robertocapuano/BASIC10L/main/Doomfire10L/doomfire.dsk&BASIC_RUN=doomfire.bas
 
 for a smoother effect use an accelerated clock:
 
-- https://webmsx.org/?Z80_CLOCK_MODE=8&DISK=https://github.com/robertocapuano/Doomfire10L/raw/main/doomfire.dsk&BASIC_RUN=doomfire.bas
+- https://webmsx.org/?Z80_CLOCK_MODE=8&DISK=https://raw.githubusercontent.com/robertocapuano/BASIC10L/main/Doomfire10L/doomfire.dsk&BASIC_RUN=doomfire.bas
 
 # Source Description
 
