@@ -21,7 +21,7 @@ Symbols:
 - `O` opponent piece
 - `Q` opponent king
 
-Sources are stored at: https://github.com/robertocapuano/Checker10L
+Sources are stored at: https://github.com/robertocapuano/BASIC10L/Checker10L
 
 # Installation
 Game was developed in MSX-BASIC v3 on a MSX2+. Emulator is available at https://webmsx.org/
