@@ -34,7 +34,7 @@ WebMSX Launch URL:
 #Variables
 
 |Name|Description|
------------------
+|-|-|
 |PT| Points|
 |ER| errors|
 
