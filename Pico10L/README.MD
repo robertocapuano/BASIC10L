@@ -31,7 +31,7 @@ WebMSX Launch URL:
 - https://webmsx.org/?DISK=https://github.com/robertocapuano/BASIC10L/raw/main/Pico10L/pico.dsk&BASIC_RUN=pico.bas
 
 
-#Variables
+# Variables
 
 |Name|Description|
 |-|-|
