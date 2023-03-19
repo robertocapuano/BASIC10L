@@ -44,7 +44,7 @@ WebMSX Launch URL:
 |CC| contatori per colonna|
 |GC| character to guess|
 |CP| char pointer|
-|PA| |power array|
+|PA|power array|
 |CB| char byte|
 |CM| mappa del carattere|
 |UM| mappa dell'utente|
