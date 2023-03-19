@@ -33,10 +33,10 @@ WebMSX Launch URL:
 
 #Variables
 
-Name|Description
-----------
-PT| Points
-ER| errors
+|Name|Description|
+-----------------
+|PT| Points|
+|ER| errors|
 
 SY:symbols
 NR next row
