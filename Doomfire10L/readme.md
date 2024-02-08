@@ -11,7 +11,7 @@ For smooth animation you can use Kun-BASIC but we recommend using an accelerated
 # Controls
 Press space to stop/resume the effect.
 
-Sources are stored at: https://github.com/robertocapuano/Doomfire10L
+Sources are stored at: https://github.com/robertocapuano/BASIC10L/Doomfire10L
 
 # Installation
 Game was developed in MSX-BASIC v3 on a MSX2+. Emulator is available at https://webmsx.org/
