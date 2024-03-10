@@ -1,5 +1,5 @@
 10 screen0,0,0:COLOR1,14,14:KEYOFF:CLS:DEFINTA-Z:B=base(0)+40*7+15
-20 S$="........":CH$="rnbkqbnrpppppppp"+S$+S$+S$+S$+"PPPPPPPPRNBKQBNR" 
+20 S$="........":CH$="RNBKQBNRPPPPPPPP"+S$+S$+S$+S$+"pppppppprnbkqbnr" 
 30 forI=0to63:J=I/8:C$=MID$(CH$,I+1,1):vpoke B+40*J+(Imod8),ASC(C$):next I
 40 forI=0to7:vpokeB-2+i*40,56-i:vpokeB+9*40+i,65+32+i:nextI
 50 k$=INPUT$(1)
